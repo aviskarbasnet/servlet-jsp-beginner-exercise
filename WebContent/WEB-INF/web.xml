@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>lbef-ssp-lab-assignment</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<!-- Question No. 1 -->
+	<servlet>
+		<servlet-name>WelcomeServlet</servlet-name>
+		<servlet-class>com.aviskar.example.ssp.assignment.question1.WelcomeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WelcomeServlet</servlet-name>
+		<url-pattern>/question1/WelcomeServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Question No. 9 -->
+	<error-page>
+		<exception-type>javax.servlet.ServletException</exception-type>
+		<location>/question9/ErrorServlet</location>
+	</error-page>
+
+
+	<!-- Question No. 17 -->
+	<servlet>
+		<servlet-name>InitParamExample</servlet-name>
+		<servlet-class>com.aviskar.example.ssp.assignment.question17.InitParamExample</servlet-class>
+		<init-param>
+			<param-name>name</param-name>
+			<param-value>Aviskar</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InitParamExample</servlet-name>
+		<url-pattern>/question17/InitParamExample</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Question No. 24 -->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>BasicAuthenticationExample</web-resource-name>
+			<url-pattern>/question24/BasicAuthenticationExample</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>Administrator</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>file</realm-name>
+	</login-config>
+	<security-role>
+		<role-name>Administrator</role-name>
+	</security-role>
+	
+	
+</web-app>
