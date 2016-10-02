@@ -7,7 +7,7 @@ It is build on Eclipse-Oxygen-M2 release. The exercise questions are taken from 
 > And, if you get stuck in any problem, see the solution without wasting your time.
 > Follow me & stay connected to get my upcoming guides & tutorials.
 >
-> Happy Coding!! :simple_smile: :simple_smile:
+> Happy Coding!! :blush: :blush:
 
 #### Setting Up the Project (Eclipse)
 Clone or download the repo. Move the repo folder to your Eclipse's Workspace. And, see
