@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="lbef-ssp-lab-assignment">
+    <wb-module deploy-name="servlet-jsp-beginner-exercise">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="lbef-ssp-lab-assignment"/>
-        <property name="java-output-path" value="/lbef-ssp-lab-assignment/build/classes"/>
+        <property name="context-root" value="servlet-jsp-beginner-exercise"/>
+        <property name="java-output-path" value="/servlet-jsp-beginner-exercise/build/classes"/>
     </wb-module>
 </project-modules>
