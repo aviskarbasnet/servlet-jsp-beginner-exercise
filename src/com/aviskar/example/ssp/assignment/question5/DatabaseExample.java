@@ -1,4 +1,4 @@
-package com.aviskar.example.ssp.assignment.question7;
+package com.aviskar.example.ssp.assignment.question5;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/question7/DatabaseExample")
+@WebServlet("/question5/DatabaseExample")
 public class DatabaseExample extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
@@ -25,10 +25,10 @@ public class DatabaseExample extends HttpServlet {
 		int result = 0;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/abc", "root", "mysql");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/empdb", "root", "mysql");
 			Statement statement = conn.createStatement();
 			result = statement.executeUpdate(
-					"INSERT INTO employee (employeecode, firstname, lastname, email) VALUES (5, 'ABC', 'XYZ', 'abc@xyz.com')");
+					"INSERT INTO employee (empno, name, designation, phone) VALUES (5, 'ABC XYZ', 'System Analyst', '980XXXXXXX')");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {

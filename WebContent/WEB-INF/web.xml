@@ -25,17 +25,17 @@
 	</servlet-mapping>
 
 
-	<!-- Question No. 9 -->
+	<!-- Question No. 14 -->
 	<error-page>
 		<exception-type>javax.servlet.ServletException</exception-type>
-		<location>/question9/ErrorServlet</location>
+		<location>/question14/ErrorServlet</location>
 	</error-page>
 
 
-	<!-- Question No. 17 -->
+	<!-- Question No. 22 -->
 	<servlet>
 		<servlet-name>InitParamExample</servlet-name>
-		<servlet-class>com.aviskar.example.ssp.assignment.question17.InitParamExample</servlet-class>
+		<servlet-class>com.aviskar.example.ssp.assignment.question22.InitParamExample</servlet-class>
 		<init-param>
 			<param-name>name</param-name>
 			<param-value>Aviskar</param-value>
@@ -43,15 +43,15 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>InitParamExample</servlet-name>
-		<url-pattern>/question17/InitParamExample</url-pattern>
+		<url-pattern>/question22/InitParamExample</url-pattern>
 	</servlet-mapping>
 
 
-	<!-- Question No. 24 -->
+	<!-- Question No. 30 -->
 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>BasicAuthenticationExample</web-resource-name>
-			<url-pattern>/question24/BasicAuthenticationExample</url-pattern>
+			<url-pattern>/question30/BasicAuthenticationExample</url-pattern>
 			<http-method>GET</http-method>
 			<http-method>POST</http-method>
 		</web-resource-collection>
